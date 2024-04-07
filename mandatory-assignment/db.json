@@ -1,0 +1,104 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "name": "The Witcher 3: Wild Hunt",
+      "publisher": "CD Projekt",
+      "developer": "CD Projekt Red",
+      "release_year": 2015,
+      "genre": "Action role-playing",
+      "rating": null,
+      "review": null
+    },
+    {
+      "id": 2,
+      "name": "Grand Theft Auto V",
+      "publisher": "Rockstar Games",
+      "developer": "Rockstar North",
+      "release_year": 2013,
+      "genre": "Action-adventure",
+      "rating": null,
+      "review": null
+    },
+    {
+      "id": 3,
+      "name": "The Legend of Zelda: Breath of the Wild",
+      "publisher": "Nintendo",
+      "developer": "Nintendo EPD",
+      "release_year": 2017,
+      "genre": "Action-adventure",
+      "rating": null,
+      "review": null
+    },
+    {
+      "id": 4,
+      "name": "Minecraft",
+      "publisher": "Mojang Studios",
+      "developer": "Mojang Studios",
+      "release_year": 2011,
+      "genre": "Sandbox, survival",
+      "rating": null,
+      "review": null
+    },
+    {
+      "id": 5,
+      "name": "Fortnite",
+      "publisher": "Epic Games",
+      "developer": "Epic Games",
+      "release_year": 2017,
+      "genre": "Battle royale, sandbox",
+      "rating": null,
+      "review": null
+    },
+    {
+      "id": 6,
+      "name": "Baldur's Gate",
+      "publisher": "Black Isle Studios",
+      "developer": "BioWare",
+      "release_year": 1998,
+      "genre": "Role-playing",
+      "rating": null,
+      "review": null
+    },
+    {
+      "id": 7,
+      "name": "Baldur's Gate II: Shadows of Amn",
+      "publisher": "Interplay Entertainment",
+      "developer": "BioWare",
+      "release_year": 2000,
+      "genre": "Role-playing",
+      "rating": null,
+      "review": null
+    },
+    {
+      "id": 8,
+      "name": "Red Dead Redemption 2",
+      "publisher": "Rockstar Games",
+      "developer": "Rockstar Studios",
+      "release_year": 2018,
+      "genre": "Action-adventure",
+      "rating": null,
+      "review": null
+    },
+    {
+      "id": 9,
+      "name": "Overwatch",
+      "publisher": "Blizzard Entertainment",
+      "developer": "Blizzard Entertainment",
+      "release_year": 2016,
+      "genre": "First-person shooter",
+      "rating": null,
+      "review": null
+    },
+    {
+      "id": 10,
+      "name": "The Elder Scrolls V: Skyrim",
+      "publisher": "Bethesda Softworks",
+      "developer": "Bethesda Game Studios",
+      "release_year": 2011,
+      "genre": "Action role-playing",
+      "rating": null,
+      "review": null
+    }
+  ]
+}
