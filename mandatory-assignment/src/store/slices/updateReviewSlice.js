@@ -1,5 +1,5 @@
 import {createSlice} from "@reduxjs/toolkit"
-import {useUpdateGameMutation} from "../store"
+import {useUpdateGameMutation} from "../index"
 
 const initialState = {
     gameData: [],

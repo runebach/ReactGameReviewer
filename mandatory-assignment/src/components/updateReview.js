@@ -13,14 +13,14 @@ export default function UpdateReview(){
     const [reviewText, setReviewText] = useState("")
     const game = useFetchGameByIdQuery(gameId).currentData
 
-    const UpdateReview = useUpdateGameMutation()
+    const [UpdateReview] = useUpdateGameMutation()
 
 
 
     const handleSubmit = (event) => {
         event.preventDefault()
         const updatedGame = {...game, review: reviewText}
-        dispatch(changeReview({gameId: gameId, review: reviewText}))
+        UpdateReview({gameId: gameId, review: reviewText})
         navigate("/sortedGames")
     }
     
