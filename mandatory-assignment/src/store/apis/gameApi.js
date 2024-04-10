@@ -36,7 +36,7 @@ export const gameApi = createApi({
             updateGame: builder.mutation({
                 query: ({gameId, updatedGame}) => {
                     const requestData = {
-                        url: "/games${gameId}",
+                        url: "/games/" + gameId,
                         params: {
 
                         },

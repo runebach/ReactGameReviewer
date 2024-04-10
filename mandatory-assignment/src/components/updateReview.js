@@ -1,17 +1,14 @@
-import {useDispatch} from "react-redux"
 import {useState} from "react"
 import {useNavigate, useParams} from "react-router-dom"
 
-import { useUpdateGameMutation } from "../store"
-import { useFetchGameByIdQuery } from "../store"
-import {changeReview} from "../store"
+import { useUpdateGameMutation, useFetchGameByIdQuery, useFetchSortedGamesQuery } from "../store"
 
 export default function UpdateReview(){
-    const dispatch = useDispatch()
     const navigate = useNavigate()
     const {gameId} = useParams()
     const [reviewText, setReviewText] = useState("")
     const game = useFetchGameByIdQuery(gameId).currentData
+    const {refetch} = useFetchSortedGamesQuery()
 
     const [UpdateReview] = useUpdateGameMutation()
 
@@ -20,8 +17,10 @@ export default function UpdateReview(){
     const handleSubmit = (event) => {
         event.preventDefault()
         const updatedGame = {...game, review: reviewText}
-        UpdateReview({gameId: gameId, review: reviewText})
-        navigate("/sortedGames")
+        UpdateReview({gameId: gameId, updatedGame: updatedGame}).then(() => {
+            refetch()
+            navigate("/sortedGames")
+        })
     }
     
     if(!game){
