@@ -19,7 +19,7 @@ export default function UpdateReview(){
         const updatedGame = {...game, review: reviewText}
         UpdateReview({gameId: gameId, updatedGame: updatedGame}).then(() => {
             refetch()
-            navigate("/sortedGames")
+            navigate("/searchedGames")
         })
     }
     

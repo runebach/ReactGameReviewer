@@ -8,7 +8,6 @@ export default function GameCard({game}){
 
     const handleUpdateReviewClick = () => {
         navigate("/updateReview/" + game.id)
-        console.log(game)
     }
     const handleSeeReviewClick = () => {
         console.log(game.review)
@@ -58,6 +57,7 @@ export default function GameCard({game}){
                             {reviewButton}
 
                         </div>
+                        <p>{game.review}</p>
                     </div>
                     
                 </div>

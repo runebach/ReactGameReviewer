@@ -7,10 +7,7 @@ import UpdateReview from "./components/updateReview"
 
 
 export default function App() {
-//     let searchBar
-//         if(window.location.href ===  window.location.prigin + "/searchedGames"){
-//             return <SearchBar className="nav-item me-auto"/>
-//         }
+
     return(
         <div className="container is-fluid">
             <div className="py-3">
@@ -28,11 +25,12 @@ export default function App() {
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/searchedGames" element={<SearchedGames/>}/>
-                <Route path="/updateReview/:gameId" element={<UpdateReview/>}/>
+                <Route path="/searchedGames" element={<SearchBar/>}/>
+                <Route path="/updateReview/:gameId" element={<UpdateReview/>}/> 
             </Routes>
             
             
         </div>
     )
-}
 
+}
